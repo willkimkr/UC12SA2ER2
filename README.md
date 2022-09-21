@@ -1,7 +1,4 @@
-# UC12SA2ER4
-- Implementar o método de validação de data de nascimento à classe Pessoa física
-
-- No Program, atribuir valores a um objeto do tipo Pessoa física e mostrar no console.
-
+# UC12SA2ER5
+Criar Estrutura de menu para seleção de opções de pessoa física ou jurídica
 
  
