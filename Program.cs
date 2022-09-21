@@ -46,12 +46,14 @@ do
             novaPf.Endereco = novoEndPf;
 
 
+            Console.Clear();
             Console.WriteLine(@$"
 Nome: {novaPf.Nome}
 Endereco: {novaPf.Endereco.logradouro}, {novaPf.Endereco.numero}
-Maior de idade: {metodosPf.ValidarDataNasc(novaPf.dataNasc)}
+Maior de idade: {(metodosPf.ValidarDataNasc(novaPf.dataNasc)? "sim":"nao")}
+Imposto a ser pago: {metodosPf.PagarImposto(novaPf.Rendimento).ToString("C")}
 ");
-
+            // condicao ? "sim" : "nao"
             // Console.WriteLine($"Nome: {novaPf.Nome} Nome: {novaPf.Nome}");
             // Console.WriteLine("Nome: " + novaPf.Nome + " Nome: " + novaPf.Nome);
 
@@ -80,10 +82,11 @@ Maior de idade: {metodosPf.ValidarDataNasc(novaPf.dataNasc)}
             novaPj.Endereco = novoEndPj;
 
             // Console.WriteLine(metodosPj.ValidarCnpj(novaPj.Cnpj));
+            Console.Clear();
             Console.WriteLine(@$"
 Nome: {novaPj.Nome}
 Razao social: {novaPj.RazaoSocial}
-CNPJ: {novaPj.Cnpj}, Valido: {metodosPj.ValidarCnpj(novaPj.Cnpj)}
+CNPJ: {novaPj.Cnpj}, Valido: {(metodosPj.ValidarCnpj(novaPj.Cnpj)? "sim" : "nao")}
 Endereco: {novaPj.Endereco.logradouro}, Nº: {novaPj.Endereco.numero}
 Complemento: {novaPj.Endereco.complemento}
 ");
