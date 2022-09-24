@@ -1,4 +1,4 @@
-# UC12SA2ER5
-Criar Estrutura de menu para seleção de opções de pessoa física ou jurídica
+# UC12SA2ER6
+criado metodo pagar imposto
 
  
